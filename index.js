@@ -37,6 +37,9 @@ const {Events} = require('discord.js');
 
 const {join_listener,leave_listener} = require('./join_leave.js');
 
+join_listener(client);
+leave_listener(client);
+
 //#region commands
 
 const deploy_commands = async () =>
@@ -127,9 +130,6 @@ client.on(Events.InteractionCreate,async interaction =>
 client.once(Events.ClientReady,async () => {
     
     await deploy_commands();
-
-    await join_listener(client);
-    await leave_listener(client);
     
     console.log("Ready!");
 
