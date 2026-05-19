@@ -21,6 +21,6 @@ module.exports =
     async execute(interaction)
     {
         await getServer(interaction.options.getString('address'))
-        .then(res => interaction.reply('online: ' + res.online + '\n players: ' + res.players + '\n motd: ' + res.motd)).catch(err => console.error(err));
+        .then(res => interaction.reply('online: ' + res.online + '\nplayers: ' + res.players + '\nmotd: ' + res.motd)).catch(err => console.error(err));
     }
 }
