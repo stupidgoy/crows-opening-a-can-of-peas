@@ -1,0 +1,5 @@
+
+/config.json
+# This file is used to store configuration variables for the bot. It should not be committed to version control, as it may contain sensitive information such as the bot token.
+
+/node_modules
